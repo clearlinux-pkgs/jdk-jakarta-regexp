@@ -1,6 +1,6 @@
 Name     : jdk-jakarta-regexp
 Version  : 1.5
-Release  : 1
+Release  : 2
 URL      : http://archive.apache.org/dist/jakarta/regexp/jakarta-regexp-1.5.tar.gz
 Source0  : http://archive.apache.org/dist/jakarta/regexp/jakarta-regexp-1.5.tar.gz
 Summary  : No detailed summary available

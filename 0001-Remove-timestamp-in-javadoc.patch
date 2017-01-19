@@ -1,0 +1,26 @@
+From d78d02939ffd753fb768a8db375c86b8c136c44e Mon Sep 17 00:00:00 2001
+From: Athenas Jimenez Gonzalez <athenas.jimenez.gonzalez@intel.com>
+Date: Wed, 18 Jan 2017 18:12:23 +0000
+Subject: [PATCH] Remove timestamp in javadoc
+
+---
+ build.xml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/build.xml b/build.xml
+index 677dfc5..e4f7a18 100644
+--- a/build.xml
++++ b/build.xml
+@@ -123,7 +123,8 @@
+             use="true"
+             windowtitle="${Name} ${version} API"
+             doctitle="${Name} ${version} API"
+-            bottom="Copyright &amp;copy; ${year} Apache Software Foundation. All Rights Reserved.">
++	    bottom="Copyright &amp;copy; ${year} Apache Software Foundation. All Rights Reserved."
++	    additionalparam="-notimestamp">
+       </javadoc>
+     </target>
+ 
+-- 
+2.11.0
+

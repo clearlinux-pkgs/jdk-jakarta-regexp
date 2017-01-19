@@ -1,0 +1,13 @@
+find . -name "*.jar" -exec rm -f {} \;
+
+cat > pom.xml << EOF
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jakarta-regexp</groupId>
+  <artifactId>jakarta-regexp</artifactId>
+  <version>1.5</version>
+</project>
+EOF
+
+python3 /usr/share/java-utils/mvn_file.py : regexp
+python3 /usr/share/java-utils/mvn_alias.py jakarta-regexp:jakarta-regexp regexp:regexp
